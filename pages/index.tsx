@@ -18,11 +18,12 @@ export default function Home() {
       keyboardSwitch,
       keyboardLink,
     });
-    setIsLoading(false);
 
     if (response.status === 200) {
       window.location.href = "/keyboards";
     }
+
+    setIsLoading(false);
   };
   return (
     <>
@@ -30,7 +31,7 @@ export default function Home() {
         <title>Add a keyboard</title>
       </Head>
       <div className="container">
-        <h1>Favorite Mechanical Keyboard</h1>
+        <h1>Favorite Keyboard</h1>
         <TextField
           fullWidth
           id="outlined-basic"
