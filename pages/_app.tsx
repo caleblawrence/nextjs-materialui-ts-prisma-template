@@ -5,6 +5,8 @@ import Head from "next/head";
 import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "../src/theme";
+import { AppBar, Button, Toolbar } from "@material-ui/core";
+import Link from "next/link";
 
 function MyApp({ Component, pageProps }: AppProps) {
   React.useEffect(() => {
@@ -24,6 +26,17 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
       </Head>
+      <AppBar position="static" color="transparent">
+        <Toolbar>
+          <Button color="inherit">
+            <Link href="/">Add a keyboard</Link>
+          </Button>
+
+          <Button color="inherit">
+            <Link href="/keyboards">Keyboards</Link>
+          </Button>
+        </Toolbar>
+      </AppBar>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Component {...pageProps} />

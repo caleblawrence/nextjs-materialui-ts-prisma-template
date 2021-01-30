@@ -34,7 +34,6 @@ export default function Home() {
         <h1>Favorite Keyboard</h1>
         <TextField
           fullWidth
-          id="outlined-basic"
           label="Your Name"
           variant="outlined"
           value={name}
@@ -43,7 +42,6 @@ export default function Home() {
         />
         <TextField
           fullWidth
-          id="outlined-basic"
           label="Keyboard Name"
           variant="outlined"
           value={keyboardName}
@@ -53,7 +51,6 @@ export default function Home() {
 
         <TextField
           fullWidth
-          id="outlined-basic"
           label="Keyboard Switch"
           variant="outlined"
           value={keyboardSwitch}
@@ -63,7 +60,6 @@ export default function Home() {
 
         <TextField
           fullWidth
-          id="outlined-basic"
           label="Link to Keyboard"
           variant="outlined"
           value={keyboardLink}

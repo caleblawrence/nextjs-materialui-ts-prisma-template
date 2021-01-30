@@ -17,7 +17,7 @@ const Keyboards = (props: Props) => {
       <div className="container">
         <h1>Favorite Keyboards</h1>
         {keyboards.map((keyboard) => (
-          <div style={{ marginBottom: 20 }}>
+          <div key={keyboard.name} style={{ marginBottom: 20 }}>
             <p style={{ fontSize: 20, margin: 0, padding: 0 }}>
               {keyboard.name}
             </p>
