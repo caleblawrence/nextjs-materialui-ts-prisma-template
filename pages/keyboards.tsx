@@ -23,9 +23,10 @@ const Keyboards = (props: Props) => {
             </p>
             <p style={{ margin: 0, padding: 0 }}>{keyboard.keyboardName}</p>
             <p style={{ margin: 0, padding: 0 }}>
-              {keyboard.keyboardSwitch
-                .replace("switches", "")
-                .replace("switch", "")}{" "}
+              {keyboard.keyboardSwitch &&
+                keyboard.keyboardSwitch
+                  .replace("switches", "")
+                  .replace("switch", "")}{" "}
               switches
             </p>
             {keyboard.keyboardLink && (

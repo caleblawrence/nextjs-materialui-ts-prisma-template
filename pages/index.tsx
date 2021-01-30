@@ -45,7 +45,7 @@ export default function Home() {
           id="outlined-basic"
           label="Keyboard Name"
           variant="outlined"
-          value={keyboardSwitch}
+          value={keyboardName}
           onChange={(e) => setKeyboardName(e.target.value)}
           style={{ marginTop: 10 }}
         />
@@ -55,7 +55,7 @@ export default function Home() {
           id="outlined-basic"
           label="Keyboard Switch"
           variant="outlined"
-          value={keyboardName}
+          value={keyboardSwitch}
           onChange={(e) => setKeyboardSwitch(e.target.value)}
           style={{ marginTop: 10 }}
         />
